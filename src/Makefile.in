@@ -58,7 +58,7 @@ am__installdirs = "$(DESTDIR)$(libdir)"
 libLTLIBRARIES_INSTALL = $(INSTALL)
 LTLIBRARIES = $(lib_LTLIBRARIES)
 libdbf_la_DEPENDENCIES =
-am_libdbf_la_OBJECTS = dbf.lo endian.lo
+am_libdbf_la_OBJECTS = dbf.lo dbf_endian.lo
 libdbf_la_OBJECTS = $(am_libdbf_la_OBJECTS)
 DEFAULT_INCLUDES = -I. -I$(srcdir) -I$(top_builddir)
 depcomp = $(SHELL) $(top_srcdir)/depcomp
@@ -233,13 +233,13 @@ target_alias = @target_alias@
 INCLUDES = -I@srcdir@/../include -I./include -DPACKAGE_LOCALE_DIR=\""$(datadir)/locale"\"
 noinst_HEADERS = \
 	dbf.h \
-	endian.h 
+	dbf_endian.h 
 
 lib_LTLIBRARIES = libdbf.la
 libdbf_la_LDFLAGS = -version-info @LIBDBF_VERSION_INFO@
 libdbf_la_SOURCES = \
 	dbf.c \
-	endian.c
+	dbf_endian.c
 
 libdbf_la_LIBADD = 
 BUILD_LIBS = -lm

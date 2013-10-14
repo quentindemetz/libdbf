@@ -4,7 +4,7 @@ INCLUDES = -I@srcdir@/../include -I./include -DPACKAGE_LOCALE_DIR=\""$(datadir)/
 
 noinst_HEADERS = \
 	dbf.h \
-	endian.h 
+	dbf_endian.h 
 
 lib_LTLIBRARIES = libdbf.la
 
@@ -12,7 +12,7 @@ libdbf_la_LDFLAGS = -version-info @LIBDBF_VERSION_INFO@
 
 libdbf_la_SOURCES = \
 	dbf.c \
-	endian.c
+	dbf_endian.c
 
 libdbf_la_LIBADD =
 

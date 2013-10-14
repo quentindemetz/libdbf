@@ -7,10 +7,10 @@
  * Author: Björn Berg <clergyman@gmx.de>, Uwe Steinmann <uwe@steinmann.cx>
  *
  *****************************************************************************
- * $Id: endian.c,v 1.3 2004/09/09 10:32:22 steinm Exp $
+ * $Id: dbf_endian.c,v 1.3 2004/09/09 10:32:22 steinm Exp $
  ****************************************************************************/
 
-#include "endian.h"
+#include "dbf_endian.h"
 
 /*******************************************************************
  * Changes byte construction if dbf is used on another platform
