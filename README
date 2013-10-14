@@ -1,0 +1,22 @@
+libdbf
+======
+C-library for reading dbase files.
+
+Check out
+http://community.borland.com/article/0,1410,15838,00.html
+for a description of the dBASE format
+
+
+NOTES
+
+If you have problems to build your own binary of libdbf, please read
+the following.
+
+Error Message:
+Can't locate object method "path" via package "Request" 
+at /usr/share/autoconf/Autom4te/C4che.pm line 69
+
+Solution:
+Execute the command
+	rm -rf autom4te.cache/
+in the libdbf directory and run autogen.sh again.	

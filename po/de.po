@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Uwe Steinmann <uwe@steinmann.cx>, 2004.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-09-07 18:02+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Uwe Steinmann <uwe@steinmann.cx>\n"
+"Language-Team: DE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/dbf.c:54
+#, c-format
+msgid "Unknown (code 0x%.2X)"
+msgstr "Unbekannter code 0x%.2X"
+
+#: src/dbf.c:141
+msgid "In function dbf_ReadFieldInfo(): "
+msgstr "In Funktion dbf_ReadFieldInfo(): "
+
+#: src/dbf.c:165
+msgid "In function dbf_WriteFieldInfo(): "
+msgstr "In Funktion dbf_WriteFieldInfo(): "
+
+#: src/dbf.c:312
+msgid "In function dbf_NumRows(): "
+msgstr "In Funktion dbf_NumRows(): "
+
+#: src/dbf.c:330
+msgid "In function dbf_NumCols(): "
+msgstr "In Funktion dbf_NumCols(): "
+
+#: src/dbf.c:451
+msgid "In function dbf_HeaderSize(): "
+msgstr "In Funktion dbf_HeaderSize(): "
+
+#: src/dbf.c:467
+msgid "In function dbf_RecordLength(): "
+msgstr "In Funktion dbf_RecordLength(): "
+
+#: src/dbf.c:481
+msgid "In function dbf_GetStringVersion(): "
+msgstr "In Funktion dbf_GetStringVersion(): "
+
+#: src/dbf.c:495
+msgid "In function dbf_GetVersion(): "
+msgstr "In Funktion dbf_GetVersion(): "
+
+#: src/dbf.c:510
+msgid "In function dbf_IsMemo(): "
+msgstr "In Funktion dbf_IsMemo(): "
+
+#: src/dbf.c:564
+#, c-format
+msgid "Length of record mismatches expected length (%d != %d)."
+msgstr "Länge des Datensatzes entspricht nicht erwarteter Länge (%d != %d)"
