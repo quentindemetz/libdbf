@@ -15,12 +15,18 @@ test "${OSTYPE}" = "msys" && {
 	echo "Detected Operating System: ${OSTYPE}"
 }
 
+LIBTOOLIZE=libtoolize
+
+test "${OSTYPE}" = "darwin16" && {
+        LIBTOOLIZE=glibtoolize
+}
+
 # Unix-based operating systems
 test ${OSTYPE} != "msys" -a ${OSTYPE} != "cygwin" && {
 	echo "Detected Operating System: ${OSTYPE}"
 	echo -n "Check Build Environment..."
-	for tool in aclocal autoreconf autoheader automake libtoolize intltoolize autoconf; do
-		test ! `whereis ${tool} | awk '{print $2}'` && {
+	for tool in aclocal autoreconf autoheader automake ${LIBTOOLIZE} intltoolize autoconf; do
+		test ! `which ${tool} | awk '{print $1}'` && {
 			echo " not OK"
 			echo "${tool} not found - please install first!"
 			exit
@@ -46,7 +52,7 @@ test ${OSTYPE} != "msys" -a ${OSTYPE} != "cygwin" && {
 #	chmod 755 ${i}
 #done
 
-libtoolize --copy --force
+${LIBTOOLIZE} --copy --force
 aclocal
 autoheader
 automake --verbose --copy --add-missing 
